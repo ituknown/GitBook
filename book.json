@@ -1,0 +1,54 @@
+{
+	"title": "ifknown-Gitbook",
+	"author": "MinGRn",
+	"version": "3.2.3",
+	"language": "zh-hans",
+	"plugins": [
+		"advanced-emoji@^0.2.2",
+		"tbfed-pagefooter@^0.0.1",
+		"anchor-navigation-ex@^1.0.13",
+		"favicon@^0.0.2",
+		"theme-default@^1.0.7",
+		"-lunr",
+		"-search",
+		"search-plus@^1.0.3",
+		"sectionx@^3.1.0",
+		"local-video@^1.0.1",
+		"emphasize@^1.1.0",
+		"splitter@^0.0.8",
+		"alerts@^0.2.0",
+		"expandable-chapters@^0.2.0",
+		"chart@^0.2.1"
+	],
+	"pluginsConfig": {
+		"tbfed-pagefooter": {
+			"copyright":"Copyright &copy MinGRn 2018",
+			"modify_label": "最近修订时间：",
+			"modify_format": "YYYY-MM-DD"
+		},
+		"anchor-navigation-ex": {
+			"showLevel": true,
+			"multipleH1": true,
+			"showGoTop": true,
+			"associatedWithSummary": true
+		},
+		"favicon":{
+			"shortcut": "assets/favicon.ico",
+			"bookmark": "assets/favicon.ico",
+			"appleTouch": "assets/images/apple-touch-icon.png",
+			"appleTouchMore": {
+				"120x120": "assets/images/apple-touch-icon-120x120.png",
+				"180x180": "assets/images/apple-touch-icon-180x180.png"
+			}
+		},
+		"theme-default":{
+			"showLevel": true
+		},
+		"sectionx": {
+			"tag": "b"
+		},
+		"chart": {
+			"type": "highcharts"
+		}
+	}
+}
