@@ -1,5 +1,9 @@
 /* CSS for website */
 
+body {
+    font-size: 15px;
+}
+
 /* 目录样式 */
 .book-summary ul.summary li.header {
     font-weight: bolder;
