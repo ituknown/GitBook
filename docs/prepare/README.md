@@ -10,6 +10,8 @@ gitbook 需要使用 `node.js` 命令
 
 - **阿里 `cnpm` 镜像：** http://npm.taobao.org/
 
+- **`gitbook` 插件：** https://plugins.gitbook.com/
+
 # node 官网资源下载
 
 node 官网 LTS 资源下载链接（以下下载链接中 node 版本为 `v10.15.1`，其中包含 `v6.4.1` npm）：

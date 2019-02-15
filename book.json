@@ -1,7 +1,7 @@
 {
 	"title": "ifknown-Gitbook",
 	"author": "MinGRn",
-	"version": "3.2.3",
+	"gitbook": "3.2.3",
 	"language": "zh-hans",
 	"plugins": [
 		"advanced-emoji@^0.2.2",
