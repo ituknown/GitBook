@@ -1,16 +1,8 @@
 # 前言
 
-gitbook 需要使用 `node.js` 命令
+GitBook 需要使用 `node.js` 命令
 
 因此，在具体使用之前需要在机器上安装 `node.js`，如果机器中之前已经安装过 `node.js`，这里可以直接跳过。
-
-- **node 官网：** https://nodejs.org/
-
-- **nvm github：** https://github.com/coreybutler/nvm-windows/releases
-
-- **阿里 `cnpm` 镜像：** http://npm.taobao.org/
-
-- **`gitbook` 插件：** https://plugins.gitbook.com/
 
 # node 官网资源下载
 
@@ -55,8 +47,8 @@ node 官网 LTS 资源下载链接（以下下载链接中 node 版本为 `v10.1
   </tbody>
 </table>
 
-# github NVM 下载
+# GitHub NVM 下载
 
-github 中 nvm 只包含 windows 版本，mac 与 linux 平台无法使用。
+GitHub 中 nvm 只包含 windows 版本，mac 与 linux 平台无法使用。
 
 ![github-nvm-win](./_images/github-nvm-win.png)

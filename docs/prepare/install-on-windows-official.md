@@ -59,7 +59,11 @@ $ npm -v
 
 # 环境变量配置
 
-在计算机环境变量中的系统变量栏 `新建` 环境变量。变量名为 `NODE_HOME`，变量值为 `node` 文件所在目录，即 `D:\NODE\node `:
+在计算机环境变量（右键单击 `我的电脑` - `属性` - `高级系统设置` - `高级` - `环境变量`）中的系统变量栏 `新建` 环境变量。变量名为 `NODE_HOME`，变量值为 `node` 文件所在目录，即 `D:\NODE\node`:
+
+```
+NODE_HOME: D:\NODE\node
+```
 
 ![](./_images/node-sys-env.png)
 
@@ -112,6 +116,48 @@ D:\NODE\node_modules
 ```
 
 `cnpm` 与 `npm` 用法相同，由于使用国内镜像，因此网络更快！现在你就可以直接使用 `cnpm` 命令进行管理与下载相关依赖了！
+
+<!--sec data-title="扩展" data-id="section0" data-show=true ces-->
+
+事实上，直接使用如下命令是需要下载 `cnpm` 的。
+
+```
+$ npm install -g cnpm --registry=https://registry.npm.taobao.org
+```
+
+命令执行完成后可以在 `node` 的安装目录下的 `node_modules` 看到 `cnpm` 文件夹，该文件夹下就是 `cnpm` 相关命令：
+
+```
+$ ls
+cnpm    npm
+```
+
+因此，直接使用这种方式依然需要从外网进行下载 `cnpm` 依赖。虽然安装包不大，但是也需要宽裕的带宽。除了直接使用这种方式之外，还有另外一种方式进行设
+置下载镜像。
+
+使用 `npm config list` 命令可以查看 `npm` 的配置信息：
+
+```
+$ npm config list
+...
+metrics-registry = "https://registry.npmjs.org/"
+...
+```
+
+可以看到 `metrics-registry` 指定了仓库的下载地址。虽然平常使用 `cnpm` 来代替 `npm`，但也只是使用新的指令而已。有时候安装依赖时使用的源还是
+`https://registry.npmjs.org/`。所以，直接修改 `metrics-registry` 也是就能从根源上解决问题。这样 `cnpm` 和 `npm` 就没有任何差别了。
+
+```
+$ npm config set registry https://registry.npm.taobao.org
+$ npm config list
+...
+metrics-registry = "https://registry.npm.taobao.org"
+...
+```
+
+注意，这种方式是不推荐的方式，建议平时使用的时候还是直接使用 `cnpm` 较好！
+
+<!--endsec-->
 
 # node 升级
 

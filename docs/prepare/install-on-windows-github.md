@@ -8,7 +8,7 @@ nvm 是 Mac 下的 node 管理工具，有点类似管理 Ruby 的 rvm，如果�
 
 # 下载
 
-`nvm-windows` 可以在 github 中进行下载。下载地址：[nvm-windows](https://github.com/coreybutler/nvm-windows/releases)
+`nvm-windows` 可以在 github 中进行下载。下载地址：[download-nvm-windows](https://github.com/coreybutler/nvm-windows/releases)
   
 ![github-nvm-win](./_images/github-nvm-win.png)
  
@@ -57,9 +57,9 @@ proxy: 代理
 
 若环境变量配置有问题，可以直接按下面两种方式来手动配置：
 
-右键单击 我的电脑 - 属性 - 高级系统设置 - 高级 -环境变量 - 系统变量 中新建，输入对应变量名，变量值即可
+右键单击 `我的电脑` - `属性` - `高级系统设置` - `高级` - `环境变量` - `系统变量` 中新建，输入对应变量名，变量值即可
  
- ```
+```
 NVM_HOME: D:\NodeNVM\nvm
 NVM_SYMLINK: D:\NodeNVM\nodejs
 ```
@@ -236,6 +236,30 @@ $ npm install -g cnpm --registry=https://registry.npm.taobao.org
 ```
 
 完成安装后你就可以使用 `cnpm` 进行代替 `npm` 了。
+
+<!--sec data-title="镜像加速" data-id="section5" data-show=true ces-->
+在基本操作中，有说明 `nvm` 的基本使用，比如安装使用  `nvm install <node-version>`。正常而言，是能成功下载的。不过有时候网络波动问题等，会
+导致无法下载或下载失败等问题。比如：`node` 下载成功了但是 `npm` 却下载失败。其中主要的原因就是网络影响的。
+
+想要解决该问题，我们可以使用镜像进行下载。阿里对此作了镜像，我们可以免费使用。只需要在 `nvm` 的 `settings.txt` 文件中增加如下两句配置即可：
+
+```
+node_mirror: https://npm.taobao.org/mirrors/node/
+npm_mirror: https://npm.taobao.org/mirrors/npm/
+```
+
+这样就能使用镜像加速下载 `node` 和 `npm` 了。完整 `settings.txt` 如下：
+
+```
+root: D:\Npm\nvm
+path: D:\Npm\nodejs
+arch: 64
+proxy: none
+node_mirror: https://npm.taobao.org/mirrors/node/
+npm_mirror: https://npm.taobao.org/mirrors/npm/
+```
+
+<!--endsec-->
 
 # 扩展说明
 
