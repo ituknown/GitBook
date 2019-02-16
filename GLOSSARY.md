@@ -1,3 +1,6 @@
-## Git
+## Term
+Definition for this term
 
-Git 是一个开源的分布式版本控制系统。
+## AnotherTerm
+With it's definition, this can contain bold text
+and all other kinds of inline markup ...
