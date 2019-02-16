@@ -81,12 +81,15 @@
 词汇表文件，默认对应的文件是 `GLOSSARY.md`。该文件主要存储词汇信息，如果在其他页面中出现了该文件中的词汇，鼠标放到词汇上会给出词汇示意，可以将鼠
 标移到下面两个词汇上看下效果。
 
-Git    GitBook
+Term    AnotherTerm
 
 `GLOSSARY.md` 文件格式如下所示：
 
 ```
-## Git
+## Term
+Definition for this term
 
-Git 是一个开源的分布式版本控制系统。
+## AnotherTerm
+With it's definition, this can contain bold text
+and all other kinds of inline markup ...
 ```

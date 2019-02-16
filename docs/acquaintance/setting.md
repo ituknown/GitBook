@@ -84,6 +84,24 @@ en, ar, bn, cs, de, en, es, fa, fi, fr, he, it, ja, ko, no, pl, pt, ro, ru, sv, 
 }
 ```
 
+对于软件项目，你可以使用子目录（如 `docs/`）来存储项目的文档，目录结构如下：
+
+```
+.
+├── book.json
+└── docs/
+    ├── README.md
+    └── SUMMARY.md
+```
+
+在 `book.json` 中配置：
+
+```json
+{
+    "root": "./docs"
+}
+```
+
 # links
 
 在左侧导航栏添加链接信息
@@ -175,3 +193,18 @@ GitBook默认带有5个插件：
 |`structure.summary` | `Summary file name (defaults to SUMMARY.md)`|
 |`structure.glossary`| `Glossary file name (defaults to GLOSSARY.md)` |
 |`structure.languages`| `Languages file name (defaults to LANGS.md)`|
+
+# .gitignore
+
+在 GitBook 中，你可以在根目录增加 `.gitigonre` 或 `.bookignore` 或 `.ignore` 来进行忽略文件。这样，GitBook 就不对读取该文件了，下面是
+文件内容示例，可以忽略 `test.md` 文件和 `bin` 目录下的所有文件：
+
+```
+# This is a comment
+
+# Ignore the file test.md
+test.md
+
+# Ignore everything in the directory "bin"
+bin/*
+```
