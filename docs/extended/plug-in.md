@@ -74,7 +74,7 @@ GitBook 支持丰富的插件，在旧版本（官网 legacy.gitbook.com）中�
     ],
     "pluginsConfig": {
         "github": {
-            "url": "https://github.com/zhangjikai"
+            "url": "https://github.com/MinGRn"
         }
     }
 }
