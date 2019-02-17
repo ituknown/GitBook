@@ -27,7 +27,8 @@
 node 文件夹中的文件如下所示：
 
 ```
-D:\NODE\node       
+D:\NODE\node     
+.  
 ├─node_modules    
 ├─CHANGELOG.md  
 ├─LICENSE
