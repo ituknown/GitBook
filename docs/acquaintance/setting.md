@@ -30,7 +30,7 @@ GitBook 的配置存储文件为 `book.json`。该文件可以配置本书的基
 }
 ```
 
-## author
+# author
 
 作者的相关信息
 
